@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ## Training
 
-To train the model, run the following command (in Anaconda Prompt) and hit "Enter":
+To train the model, type the following command (in Anaconda Prompt) and hit "Enter":
 
 ```
 python train.py
@@ -42,7 +42,7 @@ You would see the accuracy reported for the test set (which is a subset of the d
 
 ## Evaluation
 
-To determine the gender of names which have not been used to train the model, run the following command (in Anaconda Prompt) and hit "Enter":
+To determine the gender of names which have not been used to train the model, type the following command (in Anaconda Prompt) and hit "Enter":
 
 ```
 python evaluate.py
