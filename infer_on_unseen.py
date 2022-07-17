@@ -13,7 +13,7 @@ def text_cleaning_and_split(text):
 
 import pandas as pd
 import pickle
-model_filename = "model4a1.pkl"
+model_filename = "model4a1_fewer_combinations.pkl"
 with open(model_filename, 'rb') as file:
     vectorizer, x_train, best_random = pickle.load(file)
     
