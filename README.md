@@ -45,7 +45,7 @@ You would see the accuracy reported for the test set (which is a subset of the d
 To determine the gender of names which have not been used to train the model, type the following command (in Anaconda Prompt) and hit "Enter":
 
 ```
-python test_on_unseen.py
+python infer_on_unseen.py
 ```
 
 You would see the accuracy reported for the names in "unseen_names.csv".
