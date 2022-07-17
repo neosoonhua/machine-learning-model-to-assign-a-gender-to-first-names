@@ -2,7 +2,7 @@
 
 ## Setting up your computer if you are new to running Python code
 
-1) Download the zip file (from this Github page) to your computer and unzip it.
+1) Download the zip file from [https://github.com/neosoonhua/machine-learning-model-to-assign-a-gender-to-first-names](https://github.com/neosoonhua/machine-learning-model-to-assign-a-gender-to-first-names) to your computer and unzip it.
 
 2) Install an appropriate version of Anaconda from [https://www.anaconda.com/products/distribution#Downloads](https://www.anaconda.com/products/distribution#Downloads).
 
