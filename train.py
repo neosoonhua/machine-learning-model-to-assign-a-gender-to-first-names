@@ -55,34 +55,15 @@ from sklearn.ensemble import RandomForestClassifier
 model = RandomForestClassifier()
 model.fit(x_train, y_train)
 
-# import pickle
-# model_filename = "model4a.pkl"
-# with open(model_filename, 'wb') as file:
-#     pickle.dump((vectorizer, x_train, model), file)
-
 y_pred = model.predict(x_test)
 
 from sklearn.metrics import confusion_matrix
 print(confusion_matrix(y_test, y_pred))
 from sklearn import metrics
 print(metrics.accuracy_score(y_test, y_pred))
-# score = model.score(x_test, y_test)
+score = model.score(x_test, y_test)
 
-# print("Accuracy for test set:", score)
-
-# make predictions
-# unseen_names = pd.read_csv("Data/unseen_names.csv")
-# # print(unseen_names)
-# unseen_names_cleaned = unseen_names['name'].apply(text_cleaning_and_split)
-# x_unseen  = vectorizer.transform(unseen_names_cleaned)
-# # print(x_unseen)
-# y_unseen = unseen_names['gender']
-
-# score_unseen = model.score(x_unseen, y_unseen)
-# print("Accuracy for unseen set:", score_unseen)
-
-# y_pred_unseen = model.predict(x_unseen)
-# print(y_pred_unseen)
+print("Accuracy for test set:", score)
 
 #### RandomTreeClassifier hyperparameter tuning by RandomizedSearchCV from https://www.kaggle.com/code/mohitsital/random-forest-hyperparameter-tuning
 from sklearn.model_selection import RandomizedSearchCV
@@ -137,7 +118,7 @@ best_random = rf_random.best_estimator_
 evaluate(best_random, x_test, y_test)
 
 import pickle
-model_filename = "model4a1.pkl"
+model_filename = "model4a1_fewer_combinations.pkl"
 with open(model_filename, 'wb') as file:
     pickle.dump((vectorizer, x_train, model), file)
 
